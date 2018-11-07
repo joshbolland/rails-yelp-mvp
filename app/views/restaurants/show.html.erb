@@ -1,0 +1,17 @@
+<h2>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</h2>
+
+<p>
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @restaurant.category %>
+</p>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-danger"%> <br>
+<%= link_to 'Back', restaurants_path %>
